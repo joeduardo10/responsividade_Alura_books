@@ -36,6 +36,7 @@
 }
 .lista-menu__titulo{
     color: var(--laranja);
+    font-weight: 700;
 }
 .lista-menu__item{
     color: var(--azul-degrade);
@@ -47,4 +48,7 @@
     text-transform: uppercase;
     text-decoration: none;
     background-clip: text;
+}
+.container__botao{
+    display: none;
 }
