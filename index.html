@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -47,6 +48,35 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <div class="swiper">
+        <div class="swiper-pagination"></div>    
+	    <div class="swiper-wrapper">
+	    <div class="swiper-slide"><img src="imagens/ApacheKafka.svg" alt="Livro sobre apache kafka"> </div>
+	    <div class="swiper-slide"> <img src="imagens/Liderança.svg" alt="Livro sobre Liderança"> </div>
+        <div class="swiper-slide"> <img src="imagens/Javascript.svg" alt="Livro sobre Javascript"> </div>
+        <div class="swiper-slide"> <img src="imagens/Guia Front-end.svg" alt="Livro Guia Front end"> </div>
+	    <div class="swiper-slide"> <img src="imagens/Portugol.svg" alt="Livro de Portugol"> </div>
+        <div class="swiper-slide"><img src="imagens/Acessibilidade.svg" alt="Livro Acessibilidade">  </div>
+</div>	
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper',{
+        // speed:400,
+            spaceBetween:10,
+            slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
     
 </body>
 </html>
